@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shoes</title>
+    <link rel="stylesheet" href="style.css">
+    <!--box icons link-->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!--remix icons link-->
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<!--google fonts link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--header-->
+    <header>
+        <a href="#" class="logo">
+         <img src="img/logo.png">
+        </a>
+        <ul class="navbar">
+            <li><a href="#">men</a></li>
+            <li><a href="#">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="#">sale</a></li>
+            <li><a href="#">snkrs</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#"><i class="ri-search-line"></i></a>
+            <a href="#"><i class="ri-shopping-cart-line"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>   
+    </header>
+     <!--header-->
+     <!--section-->
+     <section class="hero">
+     <div class="hero-img">
+        <img src="img/hero1.png"class="one">
+     </div>
+     <div class="hero-text">
+        <h1>Nike Air <br> Dunk-270</h1>
+      <p>Nike's 1st Lifestyle Air Max returns with 
+       a vibrant color gradient that's sure to turn heads.
+       vibrant color gradient that's sure to turn heads.</p> 
+      <h5>$240.00</h5>
+      <div class="hero-btnn">
+        <a href="#"class="btn">Add to bag</a>
+        <a href="#" class="btn2">View Details</a>
+      </div>
+     </div>
+     </section>
+     <!--section-->
+     <!--content-->
+     <div class="content">
+        <div class="box">
+            <li><img src="img/p1.png" onclick="slider('img/hero1.png')"></li>
+        </div>
+        <div class="box">
+            <li><img src="img/p2.png" onclick="slider('img/hero2.png')"></li>
+        </div>
+        <div class="box">
+            <li><img src="img/p3.png" onclick="slider('img/hero1.png')"></li>
+        </div>
+     </div>
+     <!--content-->
+     <!--scroll-->
+        <a src="#"class="scroll" ><i class="ri-scroll-to-bottom-line"></i></a>
+<!--js code-->
+     <script type="text/javascript">
+        function slider (anything){
+        document.querySelector('.one').src = anything;
+        }
+        </script>
+        <!--js code-->      
+     <!--scroll-->
+     
+</body>
+</html>
